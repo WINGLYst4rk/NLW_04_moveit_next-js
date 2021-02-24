@@ -59,7 +59,7 @@
     transition: background-color 0.3s;/* Change the original animation for more smootheness transition*/
 }
 
-.countdownButton:hover {
+.countdownButton:not(:disabled):hover {
     background: var(--blue-dark);
 }
 
@@ -70,7 +70,15 @@
     /*transition: background-color 0.3s; || Change the animation again to be more smootheness || don´t need the transition because the css are already there  */
 }
 
-.countdownButtonActive:hover {
+.countdownButtonActive:not(:disabled):hover {
     background: var(--red);
     color: var(--white);
+}
+
+.countdownButton:disabled {
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
+
+    border-bottom: 4px solid var(--green);/*challenge to put a border on the button */
 }
