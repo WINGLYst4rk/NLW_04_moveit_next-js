@@ -18,7 +18,7 @@ export function ChallengeBox() {
                     <footer>
                         <button
                             type="button"
-                            className={styles.challengeFailButton}
+                            className={styles.challengeFailedButton}
                         >
                             Falhei
                         </button>
