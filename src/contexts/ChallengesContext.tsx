@@ -11,11 +11,11 @@ interface ChallengesContextData {
     currentExperience: number;
     challengesCompleted: number;
     activeChallenge: Challenge;
+    experienceToNextLevel: number;
     levelUp: () => void;
     startNewChallenge: () => void;
     resetChallenge: () => void;
     completeChallenge: () => void;
-    experienceToNextLevel: number;
 }
 interface ChallengeProviderProps {// to make a prop a optinal use the '?'
     children: ReactNode;
